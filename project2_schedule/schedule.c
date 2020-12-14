@@ -86,6 +86,11 @@ void* sched_genSchedInfo(char* name, char* place, int type, int month, int day)
 	schedInfo_t* schedPtr;
 	
 	//error handler
+	if (schedPtr == NULL) {
+		printf("[ERROR] failed to print the schedule Info! (object is NULL)\n");
+		return -1;
+	}
+	
 
 	//allocate memory and set the member variables
 	
